@@ -6,6 +6,9 @@
 	body {
 		padding: 30px;
 	}
+	span {
+		margin-top: 10px；
+	}
 		.triangle {
 			width: 0;
 			height:0;
@@ -26,7 +29,6 @@
 		  height: 50px;
 		  position: relative;
 		  overflow: hidden;
-	
 		  z-index: 1000;
 		}
 
@@ -42,9 +44,7 @@
 		  box-shadow: -1px -1px 10px  rgba(0, 0, 0, 0.5);
 		}
 
-		.triangle-with-shadow:hover, .triangle-with-shadow:hover:after {
-		  box-shadow: none;
-		}
+		
 
 		.dialog {
 			margin-top:-1px;
@@ -59,8 +59,9 @@
 	</style>
 </head>
 <body>
-	<div class="triangle"></div>
+	<span>1.使用Unicode显示三角</span>
 	<div class="unicode-triangle">&#9660</div>
+	<span>2.纯css实现带阴影的三角，以及使用其作出对话框效果</span>
 	<div class="triangle-with-shadow"></div>
 	<div class="dialog">
 	</div>
